@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #302c2c;
+}
+/* body {
+  height: 20000px;
+} */
+/* start home */
+.home {
+  position: relative;
+  background-image: url(images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 90px;
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(61 61 61 / 95%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+  width: 100%;
+}
+nav img {
+  width: 90px;
+}
+nav ul {
+  display: flex;
+  font-size: 18px;
+}
+nav #menue {
+  font-size: 25px;
+  display: none;
+  color: white;
+}
+nav ul li {
+  margin-right: 20px;
+  transition: 0.5s;
+  border: 2px solid #0277bd;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+nav ul li:hover {
+  background-color: #0277bd;
+}
+nav ul li a {
+  color: white;
+}
+
+.content {
+  /* background-image: url(images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  padding: 20px;
+  font-size: 25px;
+}
+.incontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #297bbb;
+}
+.Ourfacilities {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.Ourfacilities h1 {
+  color: #297bbb;
+}
+.Facilities {
+  display: flex;
+}
+.Facilities div {
+  background-color: #999999;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.Facilities div i {
+  display: block;
+  font-size: 40px;
+  padding: 15px;
+  color: #0277bd;
+}
+.Facilities div a {
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  margin: 10px;
+  border: 2px solid #0277bd;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Facilities div a:hover {
+  background-color: #0277bd;
+}
+@media (max-width: 930px) {
+  .incontent {
+    flex-direction: column;
+  }
+  .incontent img {
+    width: 60%;
+  }
+  .incontent h1 {
+    width: 100%;
+  }
+  .Facilities {
+    flex-direction: column;
+  }
+  nav #menue {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    margin: 10px;
+    transition: 0.5s;
+    border: 2px solid #0277bd;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+}
+
+.display {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  text-align: left;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  z-index: 1;
+}
+/* end home */
+/* start transfer  */
+.sendmoneypage {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.sendmoneypage h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+}
+.sendmoneypage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sendmoneypage form input {
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.sendmoneypage .btnTransfer {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.sendmoneypage p {
+  color: white;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.sendmoneypage p a {
+  color: #0277bd;
+}
+/* end transfer  */
+/* start view all customers */
+.viewAllCustomers {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.viewAllCustomers h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+}
+.viewAllCustomers table {
+  margin: 0px auto;
+  width: 70%;
+  text-align: center;
+  border-spacing: 0;
+  color: white;
+}
+
+.viewAllCustomers table tr td {
+  padding: 10px;
+  border-bottom: 1px solid #0277bd;
+}
+
+.viewAllCustomers table tr td a {
+  display: inline-block;
+  background-color: #0277bd;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.viewAllCustomers table thead td {
+  font-weight: bold;
+}
+
+/* end view all customers */
+/* start transactions */
+.transactions {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.transactions h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+}
+.transactions table {
+  margin: 0px auto;
+  width: 70%;
+  text-align: center;
+  border-spacing: 0;
+  color: white;
+}
+
+.transactions table tr td {
+  padding: 10px;
+  border-bottom: 1px solid #0277bd;
+}
+
+.transactions table tr td a {
+  display: inline-block;
+  background-color: #0277bd;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.transactions table thead td {
+  font-weight: bold;
+}
+/* end transactions */
+/* start checkBalance */
+.getcheckBalance {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.getcheckBalance h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 5px 10px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+}
+.getcheckBalance form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.getcheckBalance form input {
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.getcheckBalance .submit {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.getcheckBalance p {
+  color: white;
+  font-size: 17px;
+  margin-top: 15px;
+}
+/* end checkBalance */
+.visibile {
+  display: block;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking System</title>
+    <!-- style link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <!--  view customers -->
+    <!--  transfer mony -->
+    <!-- check balance -->
+    <div class="allpage">
+      <nav>
+        <img src="images/images__3_-removebg-preview.png" alt="" />
+        <ul>
+          <li>
+            <a class="linkToHome" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="linkToSend" href="#sendmoneypage">Send Money</a>
+          </li>
+          <li>
+            <a class="linkToCustomers" href="#viewAllCustomers"
+              >View All Customers</a
+            >
+          </li>
+          <li>
+            <a class="linkToTransactions" href="#transactions">Transactions</a>
+          </li>
+          <li>
+            <a href="#">Contact US</a>
+          </li>
+          <li>
+            <a href="#">About US</a>
+          </li>
+        </ul>
+        <i id="menue" class="fa-solid fa-bars"></i>
+      </nav>
+      <!-- start home  -->
+      <div class="home visibile" id="home">
+        <!-- <nav>
+          <img src="images/images__3_-removebg-preview.png" alt="" />
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Send Money</a>
+            </li>
+            <li>
+              <a href="#">View All Customers</a>
+            </li>
+            <li>
+              <a href="#">Transactions</a>
+            </li>
+            <li>
+              <a href="#">Contact US</a>
+            </li>
+            <li>
+              <a href="#">About US</a>
+            </li>
+          </ul>
+          <i id="menue" class="fa-solid fa-bars"></i>
+        </nav> -->
+
+        <div class="content">
+          <div class="incontent">
+            <div class="txt">
+              <h1>Welcome To</h1>
+              <h1>Sparks Bank!</h1>
+            </div>
+            <img src="images/images-removebg-preview.png" alt="" />
+          </div>
+          <div class="Ourfacilities">
+            <h1>Our Awesome Facilities</h1>
+            <div class="Facilities">
+              <div class="viewCustomers">
+                <i class="fa-solid fa-user-group"></i>
+                <a class="linkToAllCustomers" href="#viewAllCustomers"
+                  >View Customers</a
+                >
+                <p>Here,You can watch every customer of the bank</p>
+              </div>
+              <div class="transfer">
+                <i class="fa-solid fa-comments-dollar"></i>
+                <a class="sendmoney" href="#sendmoneypage">Transfer Money</a>
+                <p>Here,You can send money from your account</p>
+              </div>
+              <div class="checkBalance">
+                <i class="fa-solid fa-coins"></i>
+                <a class="link1getcheckBalance" href="#getcheckBalance"
+                  >Check Balance</a
+                >
+                <p>Here,You can check the remaining balance in your account</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end home  -->
+      <!-- start send money -->
+      <div class="sendmoneypage" id="sendmoneypage">
+        <h1>Transfer Money</h1>
+        <form action="">
+          <input
+            class="sendersAccountNumber"
+            type="text"
+            placeholder="Sender's Account Number"
+          />
+          <input
+            class="amountToTransfer"
+            type="number"
+            placeholder="Amount To Transfer"
+          />
+          <input
+            class="recieversAccountNumber"
+            type="text"
+            placeholder="Reciever's Account Number"
+          />
+        </form>
+        <button class="btnTransfer">Transfer</button>
+        <p>
+          Want to check your balance? check
+          <a class="link2getcheckBalance" href="#getcheckBalance">here</a>
+        </p>
+      </div>
+      <!-- end send money -->
+      <!-- start view all customers  -->
+      <div class="viewAllCustomers" id="viewAllCustomers">
+        <h1>All Customers</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Email</td>
+              <td>Account no</td>
+              <td>Balance</td>
+              <td>Send Money</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="namemina">Mina</td>
+              <td>mina@gmail.com</td>
+              <td class="num162020655">162020655</td>
+              <td class="balan162020655">100000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namesameh">Sameh</td>
+              <td>sameh@gmail.com</td>
+              <td class="num152020656">152020656</td>
+              <td class="balan152020656">200000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namemariam">Mariam</td>
+              <td>mariam@gmail.com</td>
+              <td class="nummariam">152020657</td>
+              <td class="balan152020657">300000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namehanna">Hanna</td>
+              <td>hanna@gmail.com</td>
+              <td class="numhanna">152020658</td>
+              <td class="balan152020658">400000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namemohamed">Mohamed</td>
+              <td>mohamed@gmail.com</td>
+              <td class="nummohamed">152020659</td>
+              <td class="balan152020659">500000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namekamel">Kamel</td>
+              <td>kamel@gmail.com</td>
+              <td class="numkamel">152020660</td>
+              <td class="balan152020660">600000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="nameashraf">Ashraf</td>
+              <td>ashraf@gmail.com</td>
+              <td class="numashraf">152020661</td>
+              <td class="balan152020661">700000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namehassan">Hassan</td>
+              <td>hassan@gmail.com</td>
+              <td class="numhassan">152020662</td>
+              <td class="balan152020662">800000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namenabel">Nabel</td>
+              <td>nabel@gmail.com</td>
+              <td class="numnabel">152020663</td>
+              <td class="balan152020663">900000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+            <tr>
+              <td class="namesamier">Samier</td>
+              <td>samier@gmail.com</td>
+              <td class="numsamier">152020664</td>
+              <td class="balan152020664">1000000</td>
+              <td><a href="#">Send Money</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end view all customers  -->
+      <!-- start Transactions -->
+      <div class="transactions" id="transactions">
+        <h1>Transactions</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Sender</td>
+              <td>Reciever</td>
+              <td>Amount</td>
+              <td>Status</td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!-- end Transactions -->
+      <!-- start check balance  -->
+      <div class="getcheckBalance" id="getcheckBalance">
+        <h1>Check Account Balance</h1>
+        <form action="">
+          <input
+            class="accountNumber"
+            type="text"
+            placeholder="Account Number"
+          />
+        </form>
+        <button class="submit">Submit</button>
+        <p></p>
+      </div>
+      <!-- end check balance  -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
